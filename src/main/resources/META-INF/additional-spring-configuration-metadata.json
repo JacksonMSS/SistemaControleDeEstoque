@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.jpa.propresties.hibaernate.jdbc.lob.non_contextual_crientio",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.propresties.hibaernate.jdbc.lob.non_contextual_crientio'"
+  },
+  {
+    "name": "Login",
+    "type": "java.lang.String",
+    "description": "A description for 'Login'"
+  }
+]}
