@@ -16,6 +16,7 @@ public class SistemaEstoqueApplication {
 
             ManFrame frame = context.getBean(ManFrame.class);
 
+            
             // Centraliza na tela
             frame.setLocationRelativeTo(null);
 

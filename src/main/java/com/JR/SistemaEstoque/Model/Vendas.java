@@ -2,6 +2,7 @@ package com.JR.SistemaEstoque.Model;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +37,7 @@ public class Vendas implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<ItemOrcamento> itens;
 
-    private double valorTotal;
+    private BigDecimal valorTotal = BigDecimal.ZERO;
 
     public Vendas() {
         this.dataVenda = LocalDateTime.now();
@@ -62,6 +63,7 @@ public class Vendas implements Serializable {
     public List<ItemOrcamento> getItens() { return itens; }
     public void setItens(List<ItemOrcamento> itens) { this.itens = itens; }
 
-    public double getValorTotal() { return valorTotal; }
-    public void setValorTotal(double valorTotal) { this.valorTotal = valorTotal; }
+    public BigDecimal getValorTotal() { return valorTotal; }
+    public void setValorTotal(BigDecimal valorTotal) { this.valorTotal = valorTotal; }
 }
+

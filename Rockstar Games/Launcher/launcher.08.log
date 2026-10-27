@@ -1,0 +1,97 @@
+[2025-11-21 10:09:01.905] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\Launcher.exe
+[2025-11-21 10:09:01.926] [DISPLAY] [Main ] [dx12] Retrieving D3D12 graphics info
+[2025-11-21 10:09:02.253] [DISPLAY] [Main ] [launcher] Opening log file.
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo] Command line: "C:\Program Files\Rockstar Games\Launcher\Launcher.exe" -skipPatcherCheck -steamAppId=1174180 -steamLocation "C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2" @args.txt
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo] P4 Version: 
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo] RGL Branch: release_03
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo] Version:    1.0.103.2534
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo] Parameters:
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo]     C:\Program Files\Rockstar Games\Launcher\Launcher.exe
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo]     -skipPatcherCheck
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo]     -steamAppId=1174180
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo]     -steamLocation
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo]     C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startupinfo]     @args.txt
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startup] Initial Working Directory: C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2
+[2025-11-21 10:09:02.266] [DISPLAY] [Main ] [startup] Working directory: C:\Program Files\Rockstar Games\Launcher
+[2025-11-21 10:09:02.278] [DISPLAY] [Main ] [packfile] Initialize 'Launcher.rpf' - succeeded
+[2025-11-21 10:09:02.278] [DISPLAY] [Main ] [localisation] Language updated to: 5
+[2025-11-21 10:09:02.321] [DISPLAY] [Main ] [external] Creating Steam min mode launch
+[2025-11-21 10:09:02.332] [DISPLAY] [Main ] [external] Steam App Id: 1174180
+[2025-11-21 10:09:02.332] [DISPLAY] [Main ] [external] Steam Location: C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2
+[2025-11-21 10:09:02.334] [DISPLAY] [Main ] [metadatamanager] Read external Steam metadata: rdr2
+[2025-11-21 10:09:02.334] [DISPLAY] [Main ] [external] App: rdr2
+[2025-11-21 10:09:02.344] [DISPLAY] [Main ] [environment] SetEnvironment: prod
+[2025-11-21 10:09:02.347] [DISPLAY] [Main ] [subsystem] Init phase 1
+[2025-11-21 10:09:02.349] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\RockstarService.exe
+[2025-11-21 10:09:02.538] [DISPLAY] [Main ] [svc] Service version: 1.0.103.2534 (1.0.103.2534)
+[2025-11-21 10:09:02.539] [DISPLAY] [Main ] [svc] Starting service (attempt 1 / 3)...
+[2025-11-21 10:09:02.770] [DISPLAY] [Main ] [titlestorage] Installed titles:
+[2025-11-21 10:09:02.770] [DISPLAY] [Main ] [titlestorage]  Title                             Progress               Version              Location                                                    
+[2025-11-21 10:09:02.808] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-11-21 10:09:02.929] [DISPLAY] [Main ] [subsystem] Initializing group 0...
+[2025-11-21 10:09:02.930] [DISPLAY] [Main ] [subsystem] Init phase 2
+[2025-11-21 10:09:02.930] [DISPLAY] [Main ] [subsystem] Starting systems...
+[2025-11-21 10:09:02.994] [DISPLAY] [Main ] [steam_api] SetSteamLanguage(brazilian) = 5
+[2025-11-21 10:09:02.994] [DISPLAY] [Main ] [minmode] Overriding language from external game launch: pt-BR
+[2025-11-21 10:09:02.994] [DISPLAY] [Main ] [localisation] Language updated to: 5
+[2025-11-21 10:09:02.994] [DISPLAY] [Main ] [subsystem] Starting diag...
+[2025-11-21 10:09:02.994] [DISPLAY] [Main ] [fileutils] Checking local versions...
+[2025-11-21 10:09:02.994] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-11-21 10:09:02.996] [DISPLAY] [Main ] [fileutils] Checking RGL version...
+[2025-11-21 10:09:02.996] [DISPLAY] [Main ] [fileutils] Version: 2.4.0.101 | 1.0.103.2534 | FFP
+[2025-11-21 10:09:02.996] [DISPLAY] [Main ] [subsystem] Starting net...
+[2025-11-21 10:09:03.013] [DISPLAY] [Main ] [subsystem] Assigning pools...
+[2025-11-21 10:09:03.013] [DISPLAY] [Main ] [subsystem] Initializing engine...
+[2025-11-21 10:09:03.014] [DISPLAY] [Main ] [subsystem] Initializing group 1...
+[2025-11-21 10:09:03.062] [DISPLAY] [Workr] [selfupdate] Up-to-date.
+[2025-11-21 10:09:03.317] [DISPLAY] [Main ] [systemtray] System tray: enabled
+[2025-11-21 10:09:03.333] [DISPLAY] [Main ] [launcher] Passed check: majorVersion(10.0.26100) >= 10
+[2025-11-21 10:09:04.154] [WARNING] [Main ] [svc] Handshake with service timed out. Setting message protocol to version 0.
+[2025-11-21 10:09:04.216] [DISPLAY] [bgsvc] [svc] Received response from service.
+[2025-11-21 10:09:04.221] [DISPLAY] [Workr] [idownloader] Starting download of 'https://gamedownloads-rockstargames-com.akamaized.net/public/launcher_online_config.xml'
+[2025-11-21 10:09:04.797] [DISPLAY] [Workr] [idownloader] Completed download of 'https://gamedownloads-rockstargames-com.akamaized.net/public/launcher_online_config.xml' (status: 0/200)
+[2025-11-21 10:09:04.798] [DISPLAY] [Workr] [startup] Skipping DLL preload.
+[2025-11-21 10:09:04.798] [DISPLAY] [Workr] [titlemanager] Downloading title list...
+[2025-11-21 10:09:04.798] [DISPLAY] [Workr] [titlemanager] Downloading default title list (SCS)...
+[2025-11-21 10:09:04.798] [DISPLAY] [Workr] [idownloader] Starting download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/GetDefaultApps?accessToken='
+[2025-11-21 10:09:05.391] [DISPLAY] [Workr] [idownloader] Completed download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/GetDefaultApps?accessToken=' (status: 0/200)
+[2025-11-21 10:09:05.394] [DISPLAY] [Workr] [services] Obtained NA-BAT
+[2025-11-21 10:09:05.394] [DISPLAY] [Workr] [services] Parsed response from GetDefaultApps: 1 title(s), 1 branch(es)
+[2025-11-21 10:09:05.394] [DISPLAY] [Workr] [titlemanager] Retrieved default title: launcher
+[2025-11-21 10:09:05.394] [DISPLAY] [Workr] [titlemanager] Launcher tokens: BAT: false, NA-BAT: true
+[2025-11-21 10:09:05.394] [DISPLAY] [Workr] [titlemanager] Title list updated.
+[2025-11-21 10:09:05.394] [DISPLAY] [Workr] [launcher] Checking for self-update...
+[2025-11-21 10:09:05.422] [DISPLAY] [Workr] [idownloader] Starting download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/GetBuildManifestFullNoAuth?branchAccessToken=BRANCHACCESS token="GYwZRkMyCYUTCpKsDD8JG+X5jiAqa1C3zseuSkelJnT7W+MdA3OMHaqqDtI1Ar+fOgKCyHW507PNtvFWuCKVOdKQ4sKLXzzr574hPOTy6/M=",signature="M4FMXWHn3iKyudHEC6z7kWBE/Jvib+xqveNljMQHBC8="'
+[2025-11-21 10:09:06.157] [DISPLAY] [Workr] [idownloader] Completed download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/GetBuildManifestFullNoAuth?branchAccessToken=BRANCHACCESS token="GYwZRkMyCYUTCpKsDD8JG+X5jiAqa1C3zseuSkelJnT7W+MdA3OMHaqqDtI1Ar+fOgKCyHW507PNtvFWuCKVOdKQ4sKLXzzr574hPOTy6/M=",signature="M4FMXWHn3iKyudHEC6z7kWBE/Jvib+xqveNljMQHBC8="' (status: 0/200)
+[2025-11-21 10:09:06.160] [DISPLAY] [Workr] [titleupdater] Doing chunk checks for launcher...
+[2025-11-21 10:09:06.272] [DISPLAY] [Workr] [titleupdater] Checked 53 chunk(s), 0 were empty, skipped 8 chunk(s) and 0 file(s)
+[2025-11-21 10:09:06.272] [DISPLAY] [Workr] [statuschecker] Title Rockstar Games Launcher: 0.0 KB / 133.01 MB
+[2025-11-21 10:09:06.272] [DISPLAY] [Workr] [selfupdate] Updating launcher...
+[2025-11-21 10:09:06.272] [DISPLAY] [Workr] [selfupdate] Branch 4, build 1109: Has NA-BAT
+[2025-11-21 10:09:06.367] [DISPLAY] [Admin] [idownloader] Starting download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/RetrieveFileChunkNoAuthMulti'
+[2025-11-21 10:09:06.993] [DISPLAY] [Admin] [idownloader] Completed download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/RetrieveFileChunkNoAuthMulti' (status: 0/200)
+[2025-11-21 10:09:19.345] [DISPLAY] [Workr] [downloadprogress] Dl: D|139474711|13|11|0|0
+[2025-11-21 10:09:19.348] [DISPLAY] [Workr] [titleupdater] Doing chunk checks for launcher...
+[2025-11-21 10:09:19.350] [DISPLAY] [Workr] [titleupdater] Checked 53 chunk(s), 0 were empty, skipped 8 chunk(s) and 0 file(s)
+[2025-11-21 10:09:19.357] [DISPLAY] [Workr] [titleupdater] Launcher needs to restart to be made up-to-date.
+[2025-11-21 10:09:19.357] [DISPLAY] [Workr] [titleupdater] Update of Rockstar Games Launcher succeeded; needs restart to complete.
+[2025-11-21 10:09:19.364] [DISPLAY] [Workr] [selfupdate] Applying downloaded self-update...
+[2025-11-21 10:09:21.708] [DISPLAY] [Workr] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\Launcher.exe
+[2025-11-21 10:09:21.709] [DISPLAY] [Workr] [title] Current version for title [pv] Rockstar Games Launcher : 1.0.103.2534
+[2025-11-21 10:09:22.237] [WARNING] [bgsvc] [svc_transactionqueue] Transaction failed: 69
+[2025-11-21 10:09:22.244] [ ERROR ] [Workr] [svc_chunk] Failed to delete: C:\Program Files\Rockstar Games\Launcher\RockstarService.exe.old
+[2025-11-21 10:09:22.343] [WARNING] [bgsvc] [svc_transactionqueue] Transaction failed: 70
+[2025-11-21 10:09:22.344] [ ERROR ] [Workr] [svc_chunk] Failed to delete: C:\Program Files\Rockstar Games\Launcher\Launcher.exe.old
+[2025-11-21 10:09:23.522] [DISPLAY] [Workr] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\Launcher.exe
+[2025-11-21 10:09:23.523] [DISPLAY] [Workr] [title] Current version for title [pv] Rockstar Games Launcher : 1.0.103.2534
+[2025-11-21 10:09:23.537] [DISPLAY] [Workr] [selfupdate] Self-update applied, need to restart.
+[2025-11-21 10:09:23.545] [DISPLAY] [Workr] [packfile] Initialize 'Launcher.rpf' - succeeded
+[2025-11-21 10:09:23.546] [DISPLAY] [Workr] [launcher] Restarting to apply self-update...
+[2025-11-21 10:09:23.546] [DISPLAY] [Workr] [lifecycle] Setting to restart after exit.
+[2025-11-21 10:09:23.546] [DISPLAY] [Workr] [lifecycle] Restart args: -skipPatcherCheck -steamAppId=1174180 -steamLocation "C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2" @args.txt -upgrade
+[2025-11-21 10:09:23.546] [DISPLAY] [Workr] [launcher] Shutdown requested! Forced: false
+[2025-11-21 10:09:23.546] [DISPLAY] [Workr] [launcher] Completed Pre-initialization tasks
+[2025-11-21 10:09:23.583] [DISPLAY] [Main ] [launcher] StartShutdown - Now in progress
+[2025-11-21 10:09:23.660] [DISPLAY] [Main ] [app] Application quit requested (exit code: 0)
+[2025-11-21 10:09:23.695] [DISPLAY] [Main ] [svc] Stopping the background service.

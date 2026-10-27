@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 import java.util.List;
@@ -51,6 +52,8 @@ public class TelaEstoque  extends JFrame {
     private final ProdutoService produtoService;
     private final VendaService vendaService;
     private JLabel lblTotalEstoque;
+    private JLabel lblTotalEstoque_1;
+    private JLabel lblTotalDia;
     private JTextField textBuscarVendas;
 
    
@@ -67,6 +70,7 @@ public class TelaEstoque  extends JFrame {
         carregarProdutos();
         carregarVendas();
         atualizarValorTotalEstoque();
+        atualizarTotalDia();
     }
 
     @Override
@@ -90,14 +94,14 @@ public class TelaEstoque  extends JFrame {
         contentPane.setLayout(null);
 
         JPanel panel = new JPanel();
-        panel.setBackground(new Color(0, 255, 128));
+        panel.setBackground(new Color(0, 128, 64));
         panel.setBounds(10, 10, 766, 543);
         contentPane.add(panel);
         panel.setLayout(null);
 
         JLabel lblNewLabel = new JLabel("Produtos em estoque ");
-        lblNewLabel.setFont(new Font("Arial Black", Font.PLAIN, 20));
         lblNewLabel.setBounds(53, 10, 260, 32);
+        lblNewLabel.setFont(new Font("Arial Black", Font.PLAIN, 20));
         panel.add(lblNewLabel);
 
         // Inicializando modelo e JList de PRODUTOS
@@ -128,13 +132,13 @@ public class TelaEstoque  extends JFrame {
         textFieldBuscar.setColumns(10);
 
         JLabel lblNewLabel_1 = new JLabel("Buscar");
-        lblNewLabel_1.setFont(new Font("Arial Black", Font.PLAIN, 11));
         lblNewLabel_1.setBounds(10, 52, 45, 26);
+        lblNewLabel_1.setFont(new Font("Arial Black", Font.PLAIN, 11));
         panel.add(lblNewLabel_1);
         
         JButton btnAtualizar = new JButton("Atualizar");
-        btnAtualizar.setFont(new Font("Arial Black", Font.PLAIN, 10));
         btnAtualizar.setBounds(273, 52, 85, 21);
+        btnAtualizar.setFont(new Font("Arial Black", Font.PLAIN, 10));
         panel.add(btnAtualizar);
         btnAtualizar.addActionListener(e -> {
 		    Produto selecionado = listprodutos.getSelectedValue();
@@ -168,13 +172,64 @@ public class TelaEstoque  extends JFrame {
 		});
  
         JButton btnApagar = new JButton("Apagar");
-        btnApagar.setFont(new Font("Arial Black", Font.PLAIN, 10));
         btnApagar.setBounds(178, 52, 85, 21);
+        btnApagar.setFont(new Font("Arial Black", Font.PLAIN, 10));
         panel.add(btnApagar);
         
         // JList de VENDAS (CONFIGURAÇÃO)
         modeloVendas = new DefaultListModel<>();
+        
+        
+        JLabel lblNewLabel_2 = new JLabel("Vendas");
+        lblNewLabel_2.setBounds(379, 121, 96, 27);
+        lblNewLabel_2.setFont(new Font("Arial Black", Font.PLAIN, 20));
+        panel.add(lblNewLabel_2);
+        
+        JButton btnCancelar = new JButton("Cancelar");
+        btnCancelar.setBounds(671, 157, 85, 21);
+        btnCancelar.addActionListener(e -> {
+        	Vendas selecionada = listVendas.getSelectedValue();
+        	
+        	if(selecionada != null) {
+        		if(selecionada.isCancelada()) {
+        			JOptionPane.showMessageDialog(this, "Esta venda já está cancelada!", "Aviso", JOptionPane.WARNING_MESSAGE);
+        			return;
+        		}
+                
+                // Mensagem de confirmação correta
+        		int confirmacao = JOptionPane.showConfirmDialog(
+        			    this,
+        			    "Tem certeza que deseja CANCELAR a Venda ", 
+        			    "Devolver ao estoque",
+        			    JOptionPane.YES_NO_OPTION,
+        			    JOptionPane.QUESTION_MESSAGE
+        			); 
+        
+                if (confirmacao == JOptionPane.YES_OPTION) {
+                    try {
+                        // Chama o serviço para cancelar e reverter o estoque
+                        vendaService.cancelarVenda(selecionada.getId()); 
+
+                        // Atualiza as listas na tela (Estoque e Vendas)
+                        refreshData(); 
+
+                        JOptionPane.showMessageDialog(this, "Venda cancelada e estoque revertido com sucesso!");
+
+                    } catch (RuntimeException ex) {
+                        JOptionPane.showMessageDialog(this, "Erro ao cancelar venda: " + ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
+                    }
+                }
+        	} else {
+                 JOptionPane.showMessageDialog(this, "Selecione uma venda para cancelar.", "Aviso", JOptionPane.WARNING_MESSAGE);
+            }
+        });
+        panel.add(btnCancelar);
+        
+        JScrollPane scrollPane_1 = new JScrollPane();
+        scrollPane_1.setBounds(379, 188, 377, 345);
+        panel.add(scrollPane_1);
         listVendas = new JList<>(modeloVendas);
+        scrollPane_1.setViewportView(listVendas);
         listVendas.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         
         // Renderizador para Vendas
@@ -226,67 +281,19 @@ public class TelaEstoque  extends JFrame {
         });
         
         
-        JLabel lblNewLabel_2 = new JLabel("Vendas");
-        lblNewLabel_2.setFont(new Font("Arial Black", Font.PLAIN, 20));
-        lblNewLabel_2.setBounds(379, 45, 96, 27);
-        panel.add(lblNewLabel_2);
-        
-        JButton btnCancelar = new JButton("Cancelar");
-        btnCancelar.addActionListener(e -> {
-        	Vendas selecionada = listVendas.getSelectedValue();
-        	
-        	if(selecionada != null) {
-        		if(selecionada.isCancelada()) {
-        			JOptionPane.showMessageDialog(this, "Esta venda já está cancelada!", "Aviso", JOptionPane.WARNING_MESSAGE);
-        			return;
-        		}
-                
-                // Mensagem de confirmação correta
-        		int confirmacao = JOptionPane.showConfirmDialog(
-        			    this,
-        			    "Tem certeza que deseja CANCELAR a Venda ", 
-        			    "Devolver ao estoque",
-        			    JOptionPane.YES_NO_OPTION,
-        			    JOptionPane.QUESTION_MESSAGE
-        			); 
-        
-                if (confirmacao == JOptionPane.YES_OPTION) {
-                    try {
-                        // Chama o serviço para cancelar e reverter o estoque
-                        vendaService.cancelarVenda(selecionada.getId()); 
-
-                        // Atualiza as listas na tela (Estoque e Vendas)
-                        refreshData(); 
-
-                        JOptionPane.showMessageDialog(this, "Venda cancelada e estoque revertido com sucesso!");
-
-                    } catch (RuntimeException ex) {
-                        JOptionPane.showMessageDialog(this, "Erro ao cancelar venda: " + ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
-                    }
-                }
-        	} else {
-                 JOptionPane.showMessageDialog(this, "Selecione uma venda para cancelar.", "Aviso", JOptionPane.WARNING_MESSAGE);
-            }
-        });        btnCancelar.setBounds(671, 87, 85, 21);
-        panel.add(btnCancelar);
-        
-        JScrollPane scrollPane_1 = new JScrollPane(listVendas); // USANDO listVendas CORRETA
-        scrollPane_1.setBounds(379, 117, 377, 416);
-        panel.add(scrollPane_1);
-        
-        
         lblTotalEstoque = new JLabel("Total em Estoque");
-        lblTotalEstoque.setFont(new Font("Arial Black", Font.PLAIN, 20));
         lblTotalEstoque.setBounds(540, 10, 197, 32);
+        lblTotalEstoque.setFont(new Font("Arial Black", Font.PLAIN, 20));
         panel.add(lblTotalEstoque);
 
-        lblTotalEstoque = new JLabel("R$ 0,00");
-        lblTotalEstoque.setFont(new Font("Arial Black", Font.BOLD, 18));
-        lblTotalEstoque.setForeground(new Color(0, 100, 0)); // Verde escuro
-        lblTotalEstoque.setBounds(546, 33, 210, 25);
-        panel.add(lblTotalEstoque);
+        lblTotalEstoque_1 = new JLabel("R$ 0,00");
+        lblTotalEstoque_1.setBounds(546, 33, 210, 25);
+        lblTotalEstoque_1.setFont(new Font("Arial Black", Font.BOLD, 18));
+        lblTotalEstoque_1.setForeground(new Color(0, 100, 0));
+        panel.add(lblTotalEstoque_1);
         
         JButton btnApagarVendas = new JButton("Apagar");
+        btnApagarVendas.setBounds(579, 157, 85, 21);
         btnApagarVendas.addActionListener(e -> { 
             Vendas selecionada = listVendas.getSelectedValue();
         	
@@ -322,25 +329,32 @@ public class TelaEstoque  extends JFrame {
                  JOptionPane.showMessageDialog(this, "Selecione uma venda para apagar.", "Aviso", JOptionPane.WARNING_MESSAGE);
             }
         });
-
-        btnApagarVendas.setBounds(576, 87, 85, 21);
         panel.add(btnApagarVendas);
         
         textBuscarVendas = new JTextField();
-        textBuscarVendas.setBounds(379, 88, 96, 19);
+        textBuscarVendas.setBounds(379, 158, 96, 19);
         panel.add(textBuscarVendas);
         textBuscarVendas.setColumns(10);
         
         JButton btnBucarVendas = new JButton("Buscar");
-        btnBucarVendas.setBounds(377, 56, 85, 21);
+        btnBucarVendas.setBounds(484, 157, 85, 21);
         panel.add(btnBucarVendas);
         
         btnBucarVendas.addActionListener(e -> {
         	filtrarVendas();
         });
-        
-        btnBucarVendas.setBounds(485, 87, 85, 21);
         panel.add(btnBucarVendas);  
+        
+        JLabel lblRDia = new JLabel("Total dia");
+        lblRDia.setFont(new Font("Arial Black", Font.PLAIN, 19));
+        lblRDia.setBounds(540, 52, 187, 32);
+        panel.add(lblRDia);
+        
+        lblTotalDia = new JLabel("R$ 0,00");
+        lblTotalDia.setBounds(546, 82, 210, 25);
+        lblTotalDia.setFont(new Font("Arial Black", Font.BOLD, 18));
+        lblTotalDia.setForeground(new Color(0, 100, 0));
+        panel.add(lblTotalDia);
       
      //  botão APAGAR Produtos 
         btnApagar.addActionListener(new ActionListener() {
@@ -427,13 +441,48 @@ public class TelaEstoque  extends JFrame {
     		NumberFormat nf= NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
 			String valorFormatado = nf.format(total);
     		
-    		lblTotalEstoque.setText(valorFormatado);
+    		lblTotalEstoque_1.setText(valorFormatado);
     	}
     }catch (Exception ex) {
-    	lblTotalEstoque.setText("R$ ERRO");
+    	lblTotalEstoque_1.setText("R$ ERRO");
         System.err.println("Erro ao calcular valor total: " + ex.getMessage());
    }
 }
+    
+    private void atualizarTotalDia() {
+        try {
+            LocalDate hoje = LocalDate.now();
+            BigDecimal total = BigDecimal.ZERO;
+
+            List<Vendas> vendas = vendaService.listarTodas();
+
+            for (Vendas venda : vendas) {
+
+                if (venda.getDataVenda() == null) {
+                    continue;
+                }
+
+                if (!venda.isCancelada()
+                        && venda.getDataVenda().toLocalDate().equals(hoje)) {
+
+                    BigDecimal valor = venda.getValorTotal();
+
+                    if (valor != null) {
+                        total = total.add(valor);
+                    }
+                }
+            }
+
+            NumberFormat nf =
+                NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
+
+            lblTotalDia.setText(nf.format(total));
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            lblTotalDia.setText("Erro ao calcular");
+        }
+    }
     
     private void filtrarVendas() {
         String dataBusca = textBuscarVendas.getText().trim();

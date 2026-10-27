@@ -58,7 +58,7 @@ public class ManFrame extends JFrame {
 	private JLabel lblTotal;
 	    
 	  public ManFrame(ProdutoService produtoService, VendaService vendaService) {
-	  	setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Jacks\\Downloads\\Gemini_Generated_Image_6jqghj6jqghj6jqg.png"));
+	  	setForeground(new Color(64, 171, 52));
 			this.produtoService = produtoService;
 			this.vendaService = vendaService;
 
@@ -66,7 +66,6 @@ public class ManFrame extends JFrame {
 			
 			setBackground(new Color(255, 255, 255));
 			getContentPane().setBackground(new Color(0, 0, 0));
-	        setTitle("Tela Principal");
 	        setSize(800, 600);
 	        setResizable(false); // botão de maximizar desabilitado
 	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -74,7 +73,7 @@ public class ManFrame extends JFrame {
 	        getContentPane().setLayout(null);
 	        
 	        JPanel painelBuscar = new JPanel();
-	        painelBuscar.setBackground(new Color(0, 255, 128));
+	        painelBuscar.setBackground(new Color(0, 128, 64));
 	        painelBuscar.setBounds(13, 57, 369, 208);
 	        getContentPane().add(painelBuscar);
 	        painelBuscar.setLayout(null);
@@ -86,7 +85,7 @@ public class ManFrame extends JFrame {
 	        
 	        Campobuscar = new JTextField();
 	        Campobuscar.setFont(new Font("Arial Black", Font.PLAIN, 10));
-	        Campobuscar.setBounds(11, 23, 336, 19);
+	        Campobuscar.setBounds(10, 23, 336, 19);
 	        painelBuscar.add(Campobuscar);
 	        Campobuscar.setColumns(10);
 	        
@@ -162,7 +161,7 @@ public class ManFrame extends JFrame {
 	        
 	        //orçamento
 	        JPanel panel_1 = new JPanel();
-	        panel_1.setBackground(new Color(0, 255, 128));
+	        panel_1.setBackground(new Color(0, 128, 64));
 	        panel_1.setBounds(392, 57, 384, 208);
 	        getContentPane().add(panel_1);
 	        panel_1.setLayout(null);
@@ -244,8 +243,8 @@ public class ManFrame extends JFrame {
 
 	                Vendas novaVenda = new Vendas();
 	                novaVenda.setItens(itensVendidos);
-	                novaVenda.setValorTotal(totalVenda.doubleValue());
-	                
+	                novaVenda.setValorTotal(totalVenda);
+
 	                vendaService.salvar(novaVenda);
 
 	                for(Produto p : produtosParaAtualizar) {
@@ -332,9 +331,10 @@ public class ManFrame extends JFrame {
 
 	            // texto do orçamento
 	            StringBuilder sb = new StringBuilder();
-	            sb.append("**** Agro Rações ****\n");
-	            sb.append("CNPJ: 12.345.678/0001-90\n");     
-	            sb.append("Contato: (99) 99999-9999\n");     
+	            sb.append("**** HS da Contrução ****\n");
+	            sb.append("CNPJ: 17.380.515.0001-67\n");     
+	            sb.append("Contato: Naldo (75) 99809-7951\n");  
+	            sb.append("Contato: juliana (75) 99920-1809\n"); 
 	            sb.append("Orçamento Cliente\n");
 	            sb.append("-----------------------------\n");
 
@@ -409,7 +409,7 @@ public class ManFrame extends JFrame {
 	        panel_1.add(scrollPane1);
 	        
 	        JPanel panelCadastro = new JPanel();
-	        panelCadastro.setBackground(new Color(0, 255, 128));
+	        panelCadastro.setBackground(new Color(0, 128, 64));
 	        panelCadastro.setBounds(13, 275, 763, 278);
 	        getContentPane().add(panelCadastro);
 	        panelCadastro.setLayout(null);
@@ -475,14 +475,15 @@ public class ManFrame extends JFrame {
 	        btnsave.addActionListener(e -> salvarProduto());
 	        
 	        JPanel panel_4 = new JPanel();
-	        panel_4.setBackground(new Color(0, 255, 128));
+	        panel_4.setToolTipText("HS da construção");
+	        panel_4.setBackground(new Color(0, 128, 64));
 	        panel_4.setBounds(13, 10, 763, 37);
 	        getContentPane().add(panel_4);
 	        panel_4.setLayout(new BorderLayout(0, 0));
 	        
-	        JLabel lblNewLabel_6 = new JLabel("Agro Rações");
-	        lblNewLabel_6.setFont(new Font("Arial Black", Font.PLAIN, 24));
-	        panel_4.add(lblNewLabel_6);
+	        JLabel lblNewLabel_6 = new JLabel("                                           HS da Contrução");
+	        lblNewLabel_6.setFont(new Font("Arial Black", Font.PLAIN, 20));
+	        panel_4.add(lblNewLabel_6, BorderLayout.CENTER);
 	    }
 		
 		 private void atualizarTotal() {			

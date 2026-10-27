@@ -15,4 +15,6 @@ public interface VendasRepository extends JpaRepository<Vendas,UUID> {
 	List<Vendas> findByDataVendaBetween(LocalDateTime inicio, LocalDateTime fim);
 
 	List<Vendas> findByDataVenda(LocalDateTime startOfDay);
+	
+	List<Vendas> findAllByOrderByDataVendaDesc();
 }

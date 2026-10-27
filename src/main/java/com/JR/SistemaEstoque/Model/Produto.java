@@ -11,13 +11,16 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name = "TB_Produtos")
+@Table(name = "TB_Produtos", uniqueConstraints = {
+	    @UniqueConstraint(columnNames = "nome")
+	})
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,7 +32,7 @@ public class Produto implements Serializable {
 	@GeneratedValue(strategy = GenerationType.UUID)
 	private UUID id;
 
-	@Column
+	@Column(unique = true, nullable = false)
 	private String nome;
 
 

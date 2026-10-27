@@ -1,0 +1,146 @@
+[2025-12-06 22:04:07.625] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\Launcher.exe
+[2025-12-06 22:04:07.644] [DISPLAY] [Main ] [dx12] Retrieving D3D12 graphics info
+[2025-12-06 22:04:07.805] [DISPLAY] [Main ] [launcher] Opening log file.
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo] Command line: "C:\Program Files\Rockstar Games\Launcher\Launcher.exe" -skipPatcherCheck -steamAppId=1174180 -steamLocation "C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2" @args.txt -upgrade
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo] P4 Version: Change 38612724
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo] RGL Branch: release_05
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo] Version:    1.0.105.2720
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo] Session ID: deb4bc01-6e4c-121b-9a24-5ba6817e4db3
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo] Name Hash:  4CFA761F
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo] Parameters:
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo]     C:\Program Files\Rockstar Games\Launcher\Launcher.exe
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo]     -skipPatcherCheck
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo]     -steamAppId=1174180
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo]     -steamLocation
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo]     C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo]     @args.txt
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startupinfo]     -upgrade
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startup] Initial Working Directory: C:\Program Files\Rockstar Games\Launcher
+[2025-12-06 22:04:07.814] [DISPLAY] [Main ] [startup] Working directory: C:\Program Files\Rockstar Games\Launcher
+[2025-12-06 22:04:07.817] [DISPLAY] [Main ] [packfile] Initialize 'Launcher.rpf' - succeeded
+[2025-12-06 22:04:07.817] [DISPLAY] [Main ] [localisation] Language updated to: 5
+[2025-12-06 22:04:07.863] [DISPLAY] [Main ] [external] Creating Steam min mode launch
+[2025-12-06 22:04:07.866] [DISPLAY] [Main ] [external] Steam App Id: 1174180
+[2025-12-06 22:04:07.866] [DISPLAY] [Main ] [external] Steam Location: C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2
+[2025-12-06 22:04:07.868] [DISPLAY] [Main ] [metadatamanager] Read external Steam metadata: rdr2
+[2025-12-06 22:04:07.868] [DISPLAY] [Main ] [external] App: rdr2
+[2025-12-06 22:04:07.879] [ ERROR ] [Main ] [shell] Could not do OpenProcess on parent process.
+[2025-12-06 22:04:07.879] [DISPLAY] [Main ] [external] Steam not detected as parent process
+[2025-12-06 22:04:07.879] [DISPLAY] [Main ] [environment] SetEnvironment: prod
+[2025-12-06 22:04:07.883] [DISPLAY] [Main ] [subsystem] Init phase 1
+[2025-12-06 22:04:07.883] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\RockstarService.exe
+[2025-12-06 22:04:07.884] [DISPLAY] [Main ] [svc] Service version: 1.0.105.2720 (1.0.105.2720)
+[2025-12-06 22:04:07.884] [DISPLAY] [Main ] [svc] Starting service (attempt 1 / 3)...
+[2025-12-06 22:04:07.893] [DISPLAY] [Main ] [titlestorage] Installed titles:
+[2025-12-06 22:04:07.893] [DISPLAY] [Main ] [titlestorage]  Title                             Progress               Version              Location                                                    
+[2025-12-06 22:04:07.905] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-12-06 22:04:07.909] [DISPLAY] [Main ] [subsystem] Initializing group 0...
+[2025-12-06 22:04:07.909] [DISPLAY] [Main ] [subsystem] Init phase 2
+[2025-12-06 22:04:07.909] [DISPLAY] [Main ] [subsystem] Starting systems...
+[2025-12-06 22:04:07.983] [DISPLAY] [Main ] [minmode] Overriding language from external game launch: pt-BR
+[2025-12-06 22:04:07.983] [DISPLAY] [Main ] [localisation] Language updated to: 5
+[2025-12-06 22:04:07.983] [DISPLAY] [Main ] [subsystem] Starting diag...
+[2025-12-06 22:04:07.983] [DISPLAY] [Main ] [fileutils] Checking local versions...
+[2025-12-06 22:04:07.983] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-12-06 22:04:07.984] [DISPLAY] [Main ] [fileutils] Checking RGL version...
+[2025-12-06 22:04:07.984] [DISPLAY] [Main ] [fileutils] Version: 2.4.0.146 | 1.0.105.2720 | FFP
+[2025-12-06 22:04:07.984] [DISPLAY] [Main ] [subsystem] Starting net...
+[2025-12-06 22:04:07.997] [DISPLAY] [Main ] [subsystem] Assigning pools...
+[2025-12-06 22:04:07.997] [DISPLAY] [Main ] [subsystem] Initializing engine...
+[2025-12-06 22:04:07.997] [DISPLAY] [Main ] [subsystem] Initializing group 1...
+[2025-12-06 22:04:08.015] [DISPLAY] [Workr] [selfupdate] Up-to-date.
+[2025-12-06 22:04:08.155] [DISPLAY] [Main ] [systemtray] System tray: enabled
+[2025-12-06 22:04:08.163] [DISPLAY] [Main ] [launcher] Passed check: majorVersion(10.0.26100) >= 10
+[2025-12-06 22:04:08.263] [DISPLAY] [bgsvc] [svc] Received response from service.
+[2025-12-06 22:04:08.310] [DISPLAY] [Workr] [titlemanager] Downloading title list...
+[2025-12-06 22:04:08.311] [DISPLAY] [Workr] [titlemanager] Downloading default title list (SCS)...
+[2025-12-06 22:04:08.311] [DISPLAY] [Workr] [titlemanager] Skipping default title list call
+[2025-12-06 22:04:08.311] [DISPLAY] [Workr] [titlemanager] Title list updated.
+[2025-12-06 22:04:08.318] [DISPLAY] [Workr] [launcher] Checking for prerequisite updates...
+[2025-12-06 22:04:08.318] [DISPLAY] [Workr] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-12-06 22:04:08.320] [DISPLAY] [Workr] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\Redistributables\SocialClub\Social-Club-Setup.exe
+[2025-12-06 22:04:08.409] [DISPLAY] [Workr] [preqmanager] The Social Club version available matches that currently installed (both: 2.4.0.146)
+[2025-12-06 22:04:08.409] [DISPLAY] [Workr] [titleupdater] No prerequisites to install.
+[2025-12-06 22:04:08.409] [DISPLAY] [Workr] [launcher] Checking minimum SDK requirement
+[2025-12-06 22:04:08.409] [DISPLAY] [Workr] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-12-06 22:04:08.531] [DISPLAY] [Workr] [launcher] Completed Pre-initialization tasks
+[2025-12-06 22:04:08.532] [DISPLAY] [Main ] [subsystem] Init phase 3
+[2025-12-06 22:04:08.532] [DISPLAY] [Main ] [subsystem] RGL Offline Assets path: C:\Program Files\Rockstar Games\Launcher\offline.pak
+[2025-12-06 22:04:08.532] [DISPLAY] [Main ] [subsystem] Intializing connection manager.
+[2025-12-06 22:04:08.532] [DISPLAY] [Main ] [subsystem] Initializing RAGE networking.
+[2025-12-06 22:04:09.195] [DISPLAY] [Main ] [subsystem] Initializing group 2...
+[2025-12-06 22:04:10.026] [DISPLAY] [Workr] [dx12] Retrieving D3D12 graphics info
+[2025-12-06 22:04:10.123] [DISPLAY] [Workr] [sysinfo] System Configuration: 
+ CPU Info:
+  ID: AMD64 Family 23 Model 104 Stepping 1
+  Name: AMD Ryzen 5 5500U with Radeon Graphics         
+  Clock Speed: 2.10 GHZ
+  Physical Cores: 6
+  Logical Cores: 12
+  SSE 4.1: enabled
+  SSE 4.2: enabled
+
+ Disk 0 (C:\)
+  Disk Type: NVMe
+  Bytes Free: 256506134528
+  Bytes Total: 999304458240
+
+Memory Info:
+ 21474836480 B
+ 20 GB
+
+ GPU 0
+  Description: AMD Radeon(TM) Graphics
+  Capacity (Bytes): 2130247680
+  Display Capacity: 2.0 GB
+[2025-12-06 22:04:12.184] [DISPLAY] [Main ] [sysinfo] Identified device Type: 0
+[2025-12-06 22:04:12.268] [DISPLAY] [Main ] [launcher] Social Club UI has started.
+[2025-12-06 22:04:12.268] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-12-06 22:04:12.271] [DISPLAY] [Admin] [external] Setting up steam title: rdr2
+[2025-12-06 22:04:12.271] [DISPLAY] [Admin] [external] Successfully setup title
+[2025-12-06 22:04:12.297] [DISPLAY] [Main ] [external] Client is ready to attempt a launch.
+[2025-12-06 22:04:12.304] [DISPLAY] [Main ] [launcher] Time to start up: 4741 ms
+[2025-12-06 22:04:12.308] [DISPLAY] [Main ] [systemtray] System tray: enabled
+[2025-12-06 22:04:12.356] [DISPLAY] [Main ] [ui_window_controller] UiWindowController::SetContext: Invalid -> Auth
+[2025-12-06 22:04:12.356] [DISPLAY] [Main ] [ui_window_controller] UiWindowController::SetState: Invalid -> WaitForBrowser
+[2025-12-06 22:04:12.356] [DISPLAY] [Main ] [ui_window_controller] UiWindowController::SetState: WaitForBrowser -> WaitForWindow
+[2025-12-06 22:04:15.940] [DISPLAY] [Main ] [ui_window_controller] UiWindowController::SetState: WaitForWindow -> Active
+[2025-12-06 22:04:15.977] [DISPLAY] [Main ] [ui_window_controller] UiWindowController::SetState: Active -> WaitForBrowser
+[2025-12-06 22:04:15.977] [DISPLAY] [Main ] [ui_window_controller] UiWindowController::SetState: WaitForBrowser -> WaitForWindow
+[2025-12-06 22:04:15.977] [DISPLAY] [Main ] [ui_window_controller] UiWindowController::SetState: WaitForWindow -> Active
+[2025-12-06 22:04:18.941] [DISPLAY] [Main ] [launcher] Shutdown requested! Forced: false
+[2025-12-06 22:04:18.941] [DISPLAY] [Main ] [ui_window_controller] User closed sign-in; shutting down.
+[2025-12-06 22:04:18.941] [DISPLAY] [Main ] [launcher] Shutdown requested! Forced: false
+[2025-12-06 22:04:18.943] [DISPLAY] [Main ] [launcher] StartShutdown - Now in progress
+[2025-12-06 22:04:18.943] [DISPLAY] [Main ] [launcher] SHUTDOWN_REQUESTED -> SHUTDOWN_MAIN_WINDOW
+[2025-12-06 22:04:18.943] [DISPLAY] [Main ] [launcher] SHUTDOWN_MAIN_WINDOW -> SHUTDOWN_STARTUP_WINDOW
+[2025-12-06 22:04:18.943] [DISPLAY] [Main ] [launcher] SHUTDOWN_STARTUP_WINDOW -> SHUTDOWN_NOTIFICATION_MANAGER
+[2025-12-06 22:04:18.943] [DISPLAY] [Main ] [launcher] SHUTDOWN_NOTIFICATION_MANAGER -> SHUTDOWN_GAME_LAUNCHER
+[2025-12-06 22:04:18.943] [DISPLAY] [Main ] [launcher] SHUTDOWN_GAME_LAUNCHER -> SHUTDOWN_WINDOW_CONTROLLER
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_WINDOW_CONTROLLER -> SHUTDOWN_STOP_WORKER_THREADS
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_STOP_WORKER_THREADS -> SHUTDOWN_TITLES
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_TITLES -> SHUTDOWN_DISK
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_DISK -> SHUTDOWN_BACKGROUND_SERVICE
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_BACKGROUND_SERVICE -> SHUTDOWN_TELEMETRY
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_TELEMETRY -> SHUTDOWN_CACHED_REQUEST_MANAGER
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_CACHED_REQUEST_MANAGER -> SHUTDOWN_SETTINGS_MANAGER
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_SETTINGS_MANAGER -> SHUTDOWN_SDK
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_SDK -> SHUTDOWN_PRESENCE
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_PRESENCE -> SHUTDOWN_SUBSYSTEMS
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] SHUTDOWN_SUBSYSTEMS -> SHUTDOWN_IN_PROGRESS
+[2025-12-06 22:04:19.060] [DISPLAY] [Main ] [launcher] Telemetry flushed
+[2025-12-06 22:04:19.061] [DISPLAY] [Main ] [launcher] Window destroyed
+[2025-12-06 22:04:19.061] [DISPLAY] [Main ] [launcher] SDK ready for shutdown
+[2025-12-06 22:04:19.061] [DISPLAY] [Main ] [launcher] Notifications cleared
+[2025-12-06 22:04:19.061] [DISPLAY] [Main ] [launcher] No games running
+[2025-12-06 22:04:19.061] [DISPLAY] [Main ] [launcher] Worker Threads shutdown
+[2025-12-06 22:04:19.061] [DISPLAY] [Main ] [launcher] Title state flushed
+[2025-12-06 22:04:19.061] [DISPLAY] [Main ] [launcher] Disk state flushed
+[2025-12-06 22:04:19.061] [DISPLAY] [Main ] [launcher] Cached Requests cleared
+[2025-12-06 22:04:19.166] [DISPLAY] [Main ] [launcher] Settings saved
+[2025-12-06 22:04:19.166] [DISPLAY] [Main ] [launcher] Presence signed out
+[2025-12-06 22:04:19.166] [DISPLAY] [Main ] [launcher] All subsystems have shut down
+[2025-12-06 22:04:19.166] [DISPLAY] [Main ] [launcher] SHUTDOWN_IN_PROGRESS -> SHUTDOWN_COMPLETE
+[2025-12-06 22:04:19.166] [DISPLAY] [Main ] [app] Application quit requested (exit code: 0)
+[2025-12-06 22:04:19.166] [DISPLAY] [Main ] [launcher] SHUTDOWN_COMPLETE -> SHUTDOWN_EXITING
+[2025-12-06 22:04:19.202] [DISPLAY] [Main ] [svc] Stopping the background service.

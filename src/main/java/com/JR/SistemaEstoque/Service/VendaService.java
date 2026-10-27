@@ -36,7 +36,7 @@ public class VendaService {
     // Buscar todas
     @Transactional
     public List<Vendas> listarTodas() {
-        return vendasRepository.findAll();
+    	return vendasRepository.findAllByOrderByDataVendaDesc();
     }
 
     // Buscar por ID

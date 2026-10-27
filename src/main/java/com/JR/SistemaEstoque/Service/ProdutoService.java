@@ -6,6 +6,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import com.JR.SistemaEstoque.Model.Produto;
@@ -53,8 +54,8 @@ public class ProdutoService{
         return produtorepository.findByNomeContainingIgnoreCase(nome);
     }
 
-    public void listarTodos() {
-        produtorepository.findAll().forEach(p -> System.out.println(p.getNome()));
+    public List<Produto> listarTodos() {
+        return produtorepository.findAll();
     }
     
     public BigDecimal calcularValorTotalEstoque() {
@@ -75,30 +76,40 @@ public class ProdutoService{
         return valorTotal;
     }
 
-
+    public List<Produto> buscarPorNome(String nome) {
+        System.out.println("Chamou busca: " + nome);
+        return produtorepository.findByNomeContainingIgnoreCase(nome);
+    }
     @Transactional
-	public void save(Produto produto) {
-		produtorepository.save(produto);
-	}
+    public void save(Produto produto) {
+        try {
+            produtorepository.save(produto);
+        } catch (DataIntegrityViolationException e) {
+            throw new RuntimeException("Produto existente");
+        }
+        
+    }
 
-	public Iterable<Produto> findAll() {
-		return produtorepository.findAll();
-	}
+    public Iterable<Produto> findAll() {
+        return produtorepository.findAll();
+    }
 
-	public Produto findById(UUID id) {
-		 return produtorepository.findById(id)
-			        .orElseThrow(() -> new RuntimeException("Produto não encontrado"));
-			}
+    public Produto findById(UUID id) {
+         return produtorepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Produto não encontrado"));
+    }
 
-	public void deleteById(UUID id) {
-		try {
-			produtorepository.deleteById(id);
+    public void deleteById(UUID id) {
+        try {
+            produtorepository.deleteById(id);
         } catch (Exception e) {
             throw new RuntimeException("Erro ao apagar produto com ID: " + id, e);
         }
-		
-	}
-	
+    }
+    
+    public boolean existePorNome(String nome) {
+        return produtorepository.existsByNomeIgnoreCase(nome);
+    }
 	}
 	
 	

@@ -1,0 +1,118 @@
+[2025-12-10 11:20:29.752] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\Launcher.exe
+[2025-12-10 11:20:29.777] [DISPLAY] [Main ] [dx12] Retrieving D3D12 graphics info
+[2025-12-10 11:20:29.973] [DISPLAY] [Main ] [launcher] Opening log file.
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo] Command line: "C:\Program Files\Rockstar Games\Launcher\Launcher.exe" -skipPatcherCheck -steamAppId=1174180 -steamLocation "C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2" @args.txt
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo] P4 Version: Change 38612724
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo] RGL Branch: release_05
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo] Version:    1.0.105.2720
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo] Session ID: 6fa5a401-de43-1204-8956-d3db31900c79
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo] Name Hash:  4CFA761F
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo] Parameters:
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo]     C:\Program Files\Rockstar Games\Launcher\Launcher.exe
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo]     -skipPatcherCheck
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo]     -steamAppId=1174180
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo]     -steamLocation
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo]     C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startupinfo]     @args.txt
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startup] Initial Working Directory: C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2
+[2025-12-10 11:20:29.991] [DISPLAY] [Main ] [startup] Working directory: C:\Program Files\Rockstar Games\Launcher
+[2025-12-10 11:20:30.003] [DISPLAY] [Main ] [packfile] Initialize 'Launcher.rpf' - succeeded
+[2025-12-10 11:20:30.004] [DISPLAY] [Main ] [localisation] Language updated to: 5
+[2025-12-10 11:20:30.063] [DISPLAY] [Main ] [external] Creating Steam min mode launch
+[2025-12-10 11:20:30.072] [DISPLAY] [Main ] [external] Steam App Id: 1174180
+[2025-12-10 11:20:30.072] [DISPLAY] [Main ] [external] Steam Location: C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2
+[2025-12-10 11:20:30.076] [DISPLAY] [Main ] [metadatamanager] Read external Steam metadata: rdr2
+[2025-12-10 11:20:30.076] [DISPLAY] [Main ] [external] App: rdr2
+[2025-12-10 11:20:30.092] [DISPLAY] [Main ] [environment] SetEnvironment: prod
+[2025-12-10 11:20:30.096] [DISPLAY] [Main ] [subsystem] Init phase 1
+[2025-12-10 11:20:30.097] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\RockstarService.exe
+[2025-12-10 11:20:30.345] [DISPLAY] [Main ] [svc] Service version: 1.0.105.2720 (1.0.105.2720)
+[2025-12-10 11:20:30.345] [DISPLAY] [Main ] [svc] Starting service (attempt 1 / 3)...
+[2025-12-10 11:20:30.574] [DISPLAY] [Main ] [titlestorage] Installed titles:
+[2025-12-10 11:20:30.574] [DISPLAY] [Main ] [titlestorage]  Title                             Progress               Version              Location                                                    
+[2025-12-10 11:20:30.604] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-12-10 11:20:30.752] [DISPLAY] [Main ] [subsystem] Initializing group 0...
+[2025-12-10 11:20:30.753] [DISPLAY] [Main ] [subsystem] Init phase 2
+[2025-12-10 11:20:30.753] [DISPLAY] [Main ] [subsystem] Starting systems...
+[2025-12-10 11:20:30.836] [DISPLAY] [Main ] [minmode] Overriding language from external game launch: pt-BR
+[2025-12-10 11:20:30.836] [DISPLAY] [Main ] [localisation] Language updated to: 5
+[2025-12-10 11:20:30.836] [DISPLAY] [Main ] [subsystem] Starting diag...
+[2025-12-10 11:20:30.836] [DISPLAY] [Main ] [fileutils] Checking local versions...
+[2025-12-10 11:20:30.836] [DISPLAY] [Main ] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-12-10 11:20:30.838] [DISPLAY] [Main ] [fileutils] Checking RGL version...
+[2025-12-10 11:20:30.838] [DISPLAY] [Main ] [fileutils] Version: 2.4.0.146 | 1.0.105.2720 | FFP
+[2025-12-10 11:20:30.838] [DISPLAY] [Main ] [subsystem] Starting net...
+[2025-12-10 11:20:30.870] [DISPLAY] [Main ] [subsystem] Assigning pools...
+[2025-12-10 11:20:30.870] [DISPLAY] [Main ] [subsystem] Initializing engine...
+[2025-12-10 11:20:30.871] [DISPLAY] [Main ] [subsystem] Initializing group 1...
+[2025-12-10 11:20:31.089] [DISPLAY] [Workr] [selfupdate] Up-to-date.
+[2025-12-10 11:20:31.197] [DISPLAY] [bgsvc] [svc] Received response from service.
+[2025-12-10 11:20:31.360] [DISPLAY] [Main ] [systemtray] System tray: enabled
+[2025-12-10 11:20:31.379] [DISPLAY] [Main ] [launcher] Passed check: majorVersion(10.0.26100) >= 10
+[2025-12-10 11:20:31.480] [DISPLAY] [http1] [idownloader] Starting download of 'https://gamedownloads-rockstargames-com.akamaized.net/public/launcher_online_config.xml'
+[2025-12-10 11:20:31.735] [DISPLAY] [http1] [idownloader] Completed download of 'https://gamedownloads-rockstargames-com.akamaized.net/public/launcher_online_config.xml' (status: 0/200)
+[2025-12-10 11:20:31.827] [DISPLAY] [Workr] [titlemanager] Downloading title list...
+[2025-12-10 11:20:31.827] [DISPLAY] [Workr] [titlemanager] Downloading default title list (SCS)...
+[2025-12-10 11:20:31.827] [DISPLAY] [Workr] [idownloader] Starting download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/GetDefaultApps?accessToken='
+[2025-12-10 11:20:32.282] [DISPLAY] [Workr] [idownloader] Completed download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/GetDefaultApps?accessToken=' (status: 0/200)
+[2025-12-10 11:20:32.282] [DISPLAY] [Workr] [services] Obtained NA-BAT
+[2025-12-10 11:20:32.282] [DISPLAY] [Workr] [services] Parsed response from GetDefaultApps: 1 title(s), 1 branch(es)
+[2025-12-10 11:20:32.282] [DISPLAY] [Workr] [titlemanager] Retrieved default title: launcher
+[2025-12-10 11:20:32.283] [DISPLAY] [Workr] [titlemanager] Launcher tokens: BAT: false, NA-BAT: true
+[2025-12-10 11:20:32.283] [DISPLAY] [Workr] [titlemanager] Title list updated.
+[2025-12-10 11:20:32.283] [DISPLAY] [Workr] [launcher] Checking for self-update...
+[2025-12-10 11:20:32.295] [DISPLAY] [Workr] [mergedmanifest] Using regular build for launcher
+[2025-12-10 11:20:32.297] [DISPLAY] [Workr] [idownloader] Starting download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/GetBuildManifestFullNoAuth?branchAccessToken=BRANCHACCESS token="UymjK/GD02ioUWy3kMIog/PVoDf3bDa7h94+Qa9cYSYPkxsZcagqiHnq/NHpCpbOjbtuRS0ZsdDFRWJsHehy9SnB8iHfzvbWNQyUd7YyurQ=",signature="p7UJOd1HwKor//cvXhVUC12Dg+Gq4Pph5bz4u+TOBNE="'
+[2025-12-10 11:20:32.859] [DISPLAY] [Workr] [idownloader] Completed download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/GetBuildManifestFullNoAuth?branchAccessToken=BRANCHACCESS token="UymjK/GD02ioUWy3kMIog/PVoDf3bDa7h94+Qa9cYSYPkxsZcagqiHnq/NHpCpbOjbtuRS0ZsdDFRWJsHehy9SnB8iHfzvbWNQyUd7YyurQ=",signature="p7UJOd1HwKor//cvXhVUC12Dg+Gq4Pph5bz4u+TOBNE="' (status: 0/200)
+[2025-12-10 11:20:32.870] [DISPLAY] [Workr] [titleupdater] Doing chunk checks for launcher...
+[2025-12-10 11:20:34.644] [DISPLAY] [Workr] [titleupdater] Checked 57 chunk(s), 0 were empty, skipped 3 chunk(s) and 0 file(s)
+[2025-12-10 11:20:34.645] [DISPLAY] [Workr] [statuschecker] Title Rockstar Games Launcher: 0.0 KB / 44.41 MB
+[2025-12-10 11:20:34.645] [DISPLAY] [Workr] [selfupdate] Updating launcher...
+[2025-12-10 11:20:34.645] [DISPLAY] [Workr] [selfupdate] Branch 4, build 1134: Has NA-BAT
+[2025-12-10 11:20:34.647] [DISPLAY] [Workr] [diffpatch] 0 patchable files, total of 0.0 KB to download.
+[2025-12-10 11:20:35.045] [DISPLAY] [Admin] [idownloader] Starting download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/RetrieveFileChunkNoAuthMulti'
+[2025-12-10 11:20:35.504] [DISPLAY] [Admin] [idownloader] Completed download of 'https://rgl-prod.ros.rockstargames.com/launcher/11/LauncherServices/App.asmx/RetrieveFileChunkNoAuthMulti' (status: 0/200)
+[2025-12-10 11:20:37.228] [DISPLAY] [Main ] [launcher] Shutdown requested! Forced: false
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] StartShutdown - Now in progress
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_REQUESTED -> SHUTDOWN_MAIN_WINDOW
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_MAIN_WINDOW -> SHUTDOWN_STARTUP_WINDOW
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_STARTUP_WINDOW -> SHUTDOWN_NOTIFICATION_MANAGER
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_NOTIFICATION_MANAGER -> SHUTDOWN_GAME_LAUNCHER
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_GAME_LAUNCHER -> SHUTDOWN_WINDOW_CONTROLLER
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_WINDOW_CONTROLLER -> SHUTDOWN_STOP_WORKER_THREADS
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_STOP_WORKER_THREADS -> SHUTDOWN_TITLES
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_TITLES -> SHUTDOWN_DISK
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_DISK -> SHUTDOWN_BACKGROUND_SERVICE
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_BACKGROUND_SERVICE -> SHUTDOWN_TELEMETRY
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_TELEMETRY -> SHUTDOWN_CACHED_REQUEST_MANAGER
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_CACHED_REQUEST_MANAGER -> SHUTDOWN_SETTINGS_MANAGER
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_SETTINGS_MANAGER -> SHUTDOWN_SDK
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_SDK -> SHUTDOWN_PRESENCE
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_PRESENCE -> SHUTDOWN_SUBSYSTEMS
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SHUTDOWN_SUBSYSTEMS -> SHUTDOWN_IN_PROGRESS
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] Telemetry flushed
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] Window destroyed
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] SDK ready for shutdown
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] Notifications cleared
+[2025-12-10 11:20:37.245] [DISPLAY] [Main ] [launcher] No games running
+[2025-12-10 11:20:37.259] [DISPLAY] [Workr] [downloadprogress] Dl: D|18438403|2|7|0|0
+[2025-12-10 11:20:37.259] [DISPLAY] [Workr] [titleupdater] Update of Rockstar Games Launcher was cancelled.
+[2025-12-10 11:20:37.273] [DISPLAY] [Workr] [launcher] No self-update, continuing.
+[2025-12-10 11:20:37.280] [DISPLAY] [Workr] [launcher] Checking for prerequisite updates...
+[2025-12-10 11:20:37.280] [DISPLAY] [Workr] [fileutils] Checking version: C:\Program Files\Rockstar Games\Social Club\socialclub.dll
+[2025-12-10 11:20:37.283] [DISPLAY] [Workr] [fileutils] Checking version: C:\Program Files\Rockstar Games\Launcher\Redistributables\SocialClub\Social-Club-Setup.exe
+[2025-12-10 11:20:37.286] [DISPLAY] [Workr] [preqmanager] The Social Club version available matches that currently installed (both: 2.4.0.146)
+[2025-12-10 11:20:37.286] [DISPLAY] [Workr] [titleupdater] No prerequisites to install.
+[2025-12-10 11:20:37.286] [DISPLAY] [Workr] [launcher] Shutdown was requested, aborting.
+[2025-12-10 11:20:37.286] [DISPLAY] [Workr] [launcher] Completed Pre-initialization tasks
+[2025-12-10 11:20:37.293] [DISPLAY] [Main ] [launcher] Worker Threads shutdown
+[2025-12-10 11:20:37.310] [DISPLAY] [Main ] [launcher] Title state flushed
+[2025-12-10 11:20:37.343] [DISPLAY] [Main ] [launcher] Disk state flushed
+[2025-12-10 11:20:37.343] [DISPLAY] [Main ] [launcher] Cached Requests cleared
+[2025-12-10 11:20:37.343] [DISPLAY] [Main ] [launcher] Settings saved
+[2025-12-10 11:20:37.343] [DISPLAY] [Main ] [launcher] Presence signed out
+[2025-12-10 11:20:37.343] [DISPLAY] [Main ] [launcher] All subsystems have shut down
+[2025-12-10 11:20:37.343] [DISPLAY] [Main ] [launcher] SHUTDOWN_IN_PROGRESS -> SHUTDOWN_COMPLETE
+[2025-12-10 11:20:37.343] [DISPLAY] [Main ] [app] Application quit requested (exit code: 0)
+[2025-12-10 11:20:37.343] [DISPLAY] [Main ] [launcher] SHUTDOWN_COMPLETE -> SHUTDOWN_EXITING
+[2025-12-10 11:20:37.384] [DISPLAY] [Main ] [svc] Stopping the background service.
