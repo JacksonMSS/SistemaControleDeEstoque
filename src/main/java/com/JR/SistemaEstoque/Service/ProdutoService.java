@@ -21,9 +21,9 @@ public class ProdutoService{
     private ProdutoRepository produtorepository;
 
     
-    public List<Produto> produtos() {
-        return produtorepository.findAll();
-    }
+	public List<Produto> produtos() {
+	    return produtorepository.listarOrdenadosPorNomeENumero();
+	}
 
     public Optional<Produto> buscarPorID(Produto produto) {
         return produtorepository.findById(produto.getId());
@@ -55,7 +55,7 @@ public class ProdutoService{
     }
 
     public List<Produto> listarTodos() {
-        return produtorepository.findAll();
+        return produtorepository.listarOrdenadosPorNomeENumero();
     }
     
     public BigDecimal calcularValorTotalEstoque() {
@@ -91,9 +91,9 @@ public class ProdutoService{
     }
 
     public Iterable<Produto> findAll() {
-        return produtorepository.findAll();
+        return produtorepository.listarOrdenadosPorNomeENumero();
     }
-
+    
     public Produto findById(UUID id) {
          return produtorepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Produto não encontrado"));
