@@ -1,66 +1,39 @@
 package com.JR.SistemaEstoque.Telas;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
-
 import java.awt.Desktop;
-
 import java.awt.Font;
-
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.math.BigDecimal;
-
 import java.net.URI;
-
 import java.net.URLEncoder;
-
 import java.nio.charset.StandardCharsets;
-
 import java.util.List;
+import java.util.Locale;
 
 import javax.swing.DefaultListModel;
-
 import javax.swing.JButton;
-
 import javax.swing.JFrame;
-
 import javax.swing.JLabel;
-
 import javax.swing.JList;
-
 import javax.swing.JOptionPane;
-
 import javax.swing.JPanel;
-
 import javax.swing.JScrollPane;
-
-import javax.swing.JTextField;
-
 import javax.swing.JTextArea;
-
+import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
-
 import javax.swing.event.DocumentEvent;
-
 import javax.swing.event.DocumentListener;
 
 import org.springframework.stereotype.Component;
 
 import com.JR.SistemaEstoque.Model.ItemOrcamento;
-
 import com.JR.SistemaEstoque.Model.Produto;
-
 import com.JR.SistemaEstoque.Model.Vendas;
-
 import com.JR.SistemaEstoque.Service.ProdutoService;
-
 import com.JR.SistemaEstoque.Service.VendaService;
-
-import java.awt.event.ActionListener;
-
-import java.awt.event.ActionEvent;
-
-import java.awt.Toolkit;
-
-import java.awt.BorderLayout;
 
 @Component
 
@@ -449,15 +422,12 @@ public class ManFrame extends JFrame {
 
                         for (ItemOrcamento item : itensVendidos) {
 
-                            sb.append(String.format("%-12s %2dx R$ %.2f\n  = R$ %.2f\n",
-
-                                item.getProduto().getNome(),
-
-                                item.getQuantidade(),
-
-                                item.getPrecoUnitario(),
-
-                                item.getValortotal()));
+                        	sb.append(String.format(Locale.forLanguageTag("pt-BR"),
+                        		    "%-12s %2dx R$ %s\n  = R$ %s\n",
+                        		    item.getProduto().getNome(),
+                        		    item.getQuantidade(),
+                        		    item.getPrecoUnitario().setScale(2, java.math.RoundingMode.HALF_UP).toPlainString(),
+                        		    item.getValortotal().setScale(2, java.math.RoundingMode.HALF_UP).toPlainString()));
 
                         }
 
@@ -565,16 +535,12 @@ public class ManFrame extends JFrame {
 
                     total = total.add(valorItem);
 
-                    sb.append(String.format("%-12s %2dx R$ %.2f\n  = R$ %.2f\n",
-
-                    item.getProduto().getNome(),
-
-                    item.getQuantidade(),
-
-                    item.getPrecoUnitario(),
-
-                            valorItem));
-
+                    sb.append(String.format(Locale.forLanguageTag("pt-BR"),
+                    	    "%-12s %2dx R$ %s\n  = R$ %s\n",
+                    	    item.getProduto().getNome(),
+                    	    item.getQuantidade(),
+                    	    item.getPrecoUnitario().setScale(2, java.math.RoundingMode.HALF_UP).toPlainString(),
+                    	    valorItem.setScale(2, java.math.RoundingMode.HALF_UP).toPlainString()));
                 }
 
                 sb.append("-----------------------------\n");
